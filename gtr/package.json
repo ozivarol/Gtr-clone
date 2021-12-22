@@ -1,0 +1,29 @@
+{
+  "name": "gtr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "helmet": "^4.6.0",
+    "http-status": "^1.5.0",
+    "joi": "^17.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.1",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "twilio": "^3.72.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  }
+}
