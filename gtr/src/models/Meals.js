@@ -2,17 +2,21 @@
 const Moongose = require("mongoose");
 
 const MealsSchema = new Moongose.Schema({
-    name:String,
-    price:String,
-    category:[String],
-    detail:String,
-    res_id:{
-        type:Moongose.Types.ObjectId,
-        ref:"restaurant"
-    },},
-    {timestamps:true,versionKey:false},
-    )
+    name: String,
+    price: String,
+    category: [String],
+    detail: String,
+    owner_id: {
+        type: Moongose.Types.ObjectId,
+        ref: "user"
+    },
 
 
 
-module.exports = Moongose.model("meals",MealsSchema)
+},
+    { timestamps: true, versionKey: false },
+)
+
+
+
+module.exports = Moongose.model("meal", MealsSchema)
